@@ -1,0 +1,7 @@
+CREATE TABLE songs (
+    id NUMBER PRIMARY KEY,
+    song_path VARCHAR2(500),
+    song_name VARCHAR2(200)
+);
+
+CREATE SEQUENCE songs_seq START WITH 1 INCREMENT BY 1;
