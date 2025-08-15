@@ -77,7 +77,7 @@ Verify the table is created:
 
 SELECT * FROM songs;
 
-Step 3 — Add Required Libraries
+**### Step 3 — Add Required Libraries**
 
 In Eclipse, right-click the project → Build Path → Configure Build Path
 
@@ -89,14 +89,14 @@ jl1.0.1.jar (for MP3 playback)
 
 ojdbc8.jar (for Oracle DB connection)
 
-Step 4 — Run the Application
+**Step 4 — Run the Application**
 In Eclipse, navigate to the src/ folder and open MP3MusicPlayer.java
 
 Right-click the file → Run As → Java Application
 
 The Music Player window should now appear
 
-🎯 Usage
+**🎯 Usage**
 > Launch the app
 > Cick Add Song to select and store an MP3 file in the database
 > Select a song from the list and click Play
