@@ -1,62 +1,105 @@
-🎵 MP3 Music Player (Java Swing + Oracle DB)
-📌 Overview
+# 🎵 Music Player App (Java Swing + Oracle DB)
 
-A Java Swing application for playing .mp3 files.
+A Java Swing-based desktop application for playing `.mp3` audio files with Oracle Database integration for song management.
 
-Stores song details in an Oracle Database.
+---
 
-Uses JLayer for audio playback and JDBC for database connectivity.
+## 📌 Overview
+The **Music Player App** allows you to add `.mp3` songs to a database, play them directly from the UI, and manage your collection.  
+Built with Java Swing for the interface, JLayer for audio playback, and Oracle Database for storing song details.
 
-Ideal for learning GUI + Multimedia + Database integration in Java.
+---
 
-🚀 Features
+## ✨ Features
+- 🎶 Play, pause, and stop MP3 audio files
+- 📂 Add and store songs with name and file path in Oracle Database
+- 🗑 Delete songs from the database
+- ⚠ Error handling for unsupported formats (supports only `.mp3`)
+- 🖥 User-friendly Java Swing interface
 
-Add MP3 songs and store name/path in the database.
+---
 
-Delete songs from the database.
+## 🛠️ Technologies Used
+- **Java** (JDK 8+)
+- **Java Swing** (GUI)
+- **Oracle Database XE** (Data storage)
+- **JDBC** with `ojdbc8.jar`
+- **JLayer** (`jl1.0.1.jar`) for MP3 playback
 
-Play and stop MP3 files.
+---
 
-Supports .mp3 format only.
+## 🚀 What I Did
+- Created a **Java Swing** application for MP3 playback
+- Integrated **JLayer** for audio handling
+- Configured **Oracle Database** to store song metadata
+- Implemented **Add**, **Play**, and **Delete** functionalities with JDBC
+- Organized project files:
+  - `src/` — Java source code
+  - `lib/` — required JAR libraries
+  - `sql/` — database setup scripts
+- Wrote and tested **SQL scripts** to create necessary table and sequence
+- Documented setup and usage for easy deployment
 
-🛠 Tech Stack
+---
+## 📂 Project Structure
+MusicPlayer/
+├── src/ # Java source files
+├── lib/ # JAR dependencies (jl1.0.1.jar, ojdbc8.jar)
+├── sql/ # Database scripts (songs_table.sql)
+└── README.md # Project documentation└── README.md # Project documentation
 
-Language: Java (JDK 8+)
+---
 
-GUI: Java Swing
+## ⚙️ Setup Instructions
 
-Database: Oracle Database XE
+### 1️⃣ Prerequisites
+Before running the project, make sure you have:
+- **Java JDK 8+** installed
+- **Eclipse IDE** (or any Java IDE of your choice)
+- **Oracle Database XE** installed and running
 
-Libraries:
+### 2️⃣ Installation & Configuration
 
-jl1.0.1.jar → MP3 playback
+#### Step 1 — Import the Project into Eclipse
+1. Open **Eclipse IDE**
+2. Go to `File → Import → Existing Projects into Workspace`
+3. Click **Browse…** and select the `MusicPlayer` project folder
+4. Ensure the project is checked, then click **Finish**
 
-ojdbc8.jar → Oracle JDBC driver
+---
 
-📂 Project Structure
+#### Step 2 — Set Up the Database
+1. Open **SQL*Plus** or any Oracle SQL client
+2. Run the SQL script to create the required table and sequence:
+   ```sql
+   @path/to/songs_table.sql
+Verify the table is created:
 
-src/ → Java source code.
+SELECT * FROM songs;
 
-lib/ → Required JAR files.
+Step 3 — Add Required Libraries
 
-sql/ → SQL scripts for database setup.
+In Eclipse, right-click the project → Build Path → Configure Build Path
 
-⚙️ Setup Instructions
+Go to the Libraries tab and click Add JARs…
 
-Install JDK 8+, Eclipse IDE, and Oracle XE.
+Add the following JARs from the lib folder:
 
-Set JAVA_HOME and update system Path.
+jl1.0.1.jar (for MP3 playback)
 
-Open Eclipse → File → Import → Existing Projects into Workspace.
+ojdbc8.jar (for Oracle DB connection)
 
-Add jl1.0.1.jar and ojdbc8.jar from lib to Build Path.
+Step 4 — Run the Application
+In Eclipse, navigate to the src/ folder and open MP3MusicPlayer.java
 
-In Oracle DB, run sql/songs_table.sql to create the table and sequence.
+Right-click the file → Run As → Java Application
 
-Run MP3MusicPlayer.java in Eclipse.
+The Music Player window should now appear
 
-👤 Author
+🎯 Usage
+> Launch the app
+> Cick Add Song to select and store an MP3 file in the database
+> Select a song from the list and click Play
+> Use Stop to halt playback or Delete to remove the song from the database
+---
 
-Name: Wadkar Deepak Vishwas
-
-GitHub: wadkarkalpesh
