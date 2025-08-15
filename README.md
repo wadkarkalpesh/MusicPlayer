@@ -96,10 +96,14 @@ Right-click the file → Run As → Java Application
 
 The Music Player window should now appear
 
-**🎯 Usage**
- Launch the app.
- Cick Add Song to select and store an MP3 file in the database.
- Select a song from the list and click Play.
- Use Stop to halt playback or Delete to remove the song from the database.
----
+🎯 Usage
+
+Launch the app
+
+Click Add Song to select and store an MP3 file in the database
+
+Select a song from the list and click Play
+
+Use Stop to halt playback or Delete to remove the song from the database
+
 
