@@ -50,6 +50,12 @@ MusicPlayer/
 
 ---
 
+# 🖼️ Screenshot below!
+<img width="1187" height="926" alt="image" src="https://github.com/user-attachments/assets/2aa99346-f68c-4530-a63e-ef9e88cc2fec" />
+<img width="572" height="240" alt="image" src="https://github.com/user-attachments/assets/8c8ae235-bec7-4cf3-8c23-1498500fe721" />
+<img width="626" height="478" alt="image" src="https://github.com/user-attachments/assets/9edc9c72-cfde-449b-b615-b0225c35dfae" />
+
+---
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Prerequisites
